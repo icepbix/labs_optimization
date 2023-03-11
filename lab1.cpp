@@ -20,6 +20,7 @@ class Lab1 {
           countOfCallFunc(0) {}
     virtual bool findMin(const double&, const double&, const double&) = 0;
     friend std::ostream& operator<<(std::ostream& out, const Lab1& l);
+    virtual ~Lab1() = default;
 
    protected:
     const char* methodName;
@@ -111,6 +112,8 @@ class Method2 : public Lab1 {
         return true;
     }
 };
+
+// TODO: Method3 - метод квадратичной интерполяции
 
 };  // namespace lab1
 
